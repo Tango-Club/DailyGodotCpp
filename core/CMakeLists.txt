@@ -3,7 +3,7 @@ project(DailyGodotCpp CXX)
 add_library(DailyGodotCpp SHARED
             src/GodotLibrary.cpp
             include/Controller.h
-            src/Controller.cpp
+            include/ButtonQuit.h
             )
 
 target_link_libraries(DailyGodotCpp PUBLIC godot-cpp)
