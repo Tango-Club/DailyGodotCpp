@@ -12,6 +12,7 @@ config_version=4
 
 config/name="DailyGodotCpp"
 run/main_scene="res://scene/main/menu_main.tscn"
+run/flush_stdout_on_print=true
 config/icon="res://resource/graph/icon.png"
 
 [global]

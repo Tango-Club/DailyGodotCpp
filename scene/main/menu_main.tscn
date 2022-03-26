@@ -1,15 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://resource/font/main_title.tres" type="DynamicFont" id=1]
 [ext_resource path="res://resource/theme/buttom.tres" type="Theme" id=2]
 [ext_resource path="res://script/ButtonQuit.gdns" type="Script" id=3]
+[ext_resource path="res://script/ButtonTestStart.gdns" type="Script" id=4]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="."]
 margin_left = 344.0
@@ -47,10 +45,11 @@ __meta__ = {
 margin_right = 252.0
 margin_bottom = 179.0
 
-[node name="Button" type="Button" parent="HSplitContainer/ScrollContainer/VBoxContainer"]
+[node name="ButtonTestStart" type="Button" parent="HSplitContainer/ScrollContainer/VBoxContainer"]
 margin_right = 252.0
 margin_bottom = 57.0
 text = "test_start"
+script = ExtResource( 4 )
 
 [node name="Button2" type="Button" parent="HSplitContainer/ScrollContainer/VBoxContainer"]
 margin_top = 61.0
@@ -64,7 +63,7 @@ margin_right = 252.0
 margin_bottom = 179.0
 text = "test2"
 
-[node name="Button" type="Button" parent="HSplitContainer"]
+[node name="ButtonQuit" type="Button" parent="HSplitContainer"]
 margin_left = 276.0
 margin_right = 384.0
 margin_bottom = 143.0

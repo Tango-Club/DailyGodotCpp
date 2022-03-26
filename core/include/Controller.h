@@ -4,18 +4,16 @@
 #include <Input.hpp>
 #include <KinematicBody2D.hpp>
 
+#include "util.h"
+
 namespace godot {
 class Controller : public KinematicBody2D {
-private:
-    GODOT_CLASS(Controller, KinematicBody2D)
+    GODOT_CLASS_WITH_INIT(Controller, KinematicBody2D);
+
 public:
-    static void _register_methods() {
-        register_method((char*)"_process", &Controller::_process);
-        register_property((char*)"_speed", &Controller::_speed, 200);
-    }
-    void _init() { _motion = Vector2(0, 0); }
+    static void _register_methods() { register_method("_process", &Controller::_process); }
     void _process() {
-        _updateMotionFromInput();
+        _update_motion_from_input();
         move_and_slide(_motion);
     }
 
@@ -23,7 +21,7 @@ private:
     int _speed = 500;
     Vector2 _motion;
 
-    void _updateMotionFromInput() {
+    void _update_motion_from_input() {
         _motion = Vector2(0, 0);
         Input* input = Input::get_singleton();
 

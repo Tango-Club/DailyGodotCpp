@@ -4,6 +4,7 @@ add_library(DailyGodotCpp SHARED
             src/GodotLibrary.cpp
             include/Controller.h
             include/ButtonQuit.h
+            include/ButtonTestStart.h
             )
 
 target_link_libraries(DailyGodotCpp PUBLIC godot-cpp)
