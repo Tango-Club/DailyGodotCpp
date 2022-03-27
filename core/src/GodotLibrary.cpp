@@ -1,6 +1,8 @@
 #include <Godot.hpp>
 
 #include "Button.hpp"
+#include "button_continue.h"
+#include "button_main_menu.h"
 #include "button_quit.h"
 #include "button_test_start.h"
 #include "controller.h"
@@ -22,4 +24,6 @@ extern "C" void GDN_EXPORT godot_nativescript_init(void* handle) {
     register_class<ButtonQuit>();
     register_class<ButtonTestStart>();
     register_class<MenuCancel>();
+    register_class<ButtonContinue>();
+    register_class<ButtonMainMenu>();
 }

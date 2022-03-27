@@ -1,32 +1,44 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://resource/theme/buttom.tres" type="Theme" id=1]
+[ext_resource path="res://script/ButtonContinue.gdns" type="Script" id=2]
+[ext_resource path="res://script/ButtonMainMenu.gdns" type="Script" id=3]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="Panel" type="Panel" parent="."]
-margin_left = 345.0
-margin_top = 73.0
-margin_right = 734.0
-margin_bottom = 520.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -194.5
+margin_top = -223.5
+margin_right = 194.5
+margin_bottom = 223.5
 
 [node name="VSplitContainer" type="VSplitContainer" parent="."]
-margin_left = 428.0
-margin_top = 176.0
-margin_right = 602.0
-margin_bottom = 387.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -164.0
+margin_top = -63.5
+margin_right = 164.0
+margin_bottom = 63.5
 theme = ExtResource( 1 )
 collapsed = true
 
-[node name="Button" type="Button" parent="VSplitContainer"]
-margin_right = 228.0
+[node name="ButtonMainMenu" type="Button" parent="VSplitContainer"]
+margin_right = 328.0
 margin_bottom = 57.0
 text = "Main Menu"
+script = ExtResource( 3 )
 
-[node name="Button2" type="Button" parent="VSplitContainer"]
+[node name="ButtonContinue" type="Button" parent="VSplitContainer"]
 margin_top = 69.0
-margin_right = 228.0
-margin_bottom = 211.0
+margin_right = 328.0
+margin_bottom = 127.0
 text = "Continue"
+script = ExtResource( 2 )

@@ -3,7 +3,9 @@
 #include <Button.hpp>
 #include <Godot.hpp>
 
+#include "OS.hpp"
 #include "SceneTree.hpp"
+#include "Viewport.hpp"
 #include "util.h"
 
 namespace godot {
@@ -17,6 +19,9 @@ public:
     }
 
 private:
-    void _button_pressed() { get_tree()->quit(); }
+    void _button_pressed() {
+        get_tree()->get_root()->print_tree_pretty();
+        get_tree()->quit(0);
+    }
 };
 } // namespace godot

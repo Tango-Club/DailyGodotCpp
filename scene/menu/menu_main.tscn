@@ -17,9 +17,6 @@ margin_bottom = 276.0
 custom_fonts/font = ExtResource( 1 )
 text = "DailyGodotCpp"
 autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="HSplitContainer" type="HSplitContainer" parent="."]
 margin_left = 373.0
