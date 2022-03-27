@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://resource/theme/buttom.tres" type="Theme" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 345.0
+margin_top = 73.0
+margin_right = 734.0
+margin_bottom = 520.0
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+margin_left = 428.0
+margin_top = 176.0
+margin_right = 602.0
+margin_bottom = 387.0
+theme = ExtResource( 1 )
+collapsed = true
+
+[node name="Button" type="Button" parent="VSplitContainer"]
+margin_right = 228.0
+margin_bottom = 57.0
+text = "Main Menu"
+
+[node name="Button2" type="Button" parent="VSplitContainer"]
+margin_top = 69.0
+margin_right = 228.0
+margin_bottom = 211.0
+text = "Continue"

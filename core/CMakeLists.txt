@@ -2,9 +2,10 @@ project(DailyGodotCpp CXX)
 
 add_library(DailyGodotCpp SHARED
             src/GodotLibrary.cpp
-            include/Controller.h
-            include/ButtonQuit.h
-            include/ButtonTestStart.h
+            include/controller.h
+            include/button_quit.h
+            include/button_test_start.h
+            include/menu_cancel.h
             )
 
 target_link_libraries(DailyGodotCpp PUBLIC godot-cpp)
