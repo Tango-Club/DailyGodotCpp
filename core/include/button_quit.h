@@ -19,9 +19,6 @@ public:
     }
 
 private:
-    void _button_pressed() {
-        get_tree()->get_root()->print_tree_pretty();
-        get_tree()->quit(0);
-    }
+    void _button_pressed() { get_tree()->quit(0); }
 };
 } // namespace godot
