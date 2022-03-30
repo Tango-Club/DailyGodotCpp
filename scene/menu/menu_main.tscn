@@ -48,7 +48,7 @@ margin_bottom = 57.0
 text = "test_start"
 script = ExtResource( 4 )
 
-[node name="Button2" type="Button" parent="HSplitContainer/ScrollContainer/VBoxContainer"]
+[node name="ButtonTestSolar" type="Button" parent="HSplitContainer/ScrollContainer/VBoxContainer"]
 margin_top = 61.0
 margin_right = 252.0
 margin_bottom = 118.0

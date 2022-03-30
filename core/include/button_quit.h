@@ -3,22 +3,14 @@
 #include <Button.hpp>
 #include <Godot.hpp>
 
-#include "OS.hpp"
 #include "SceneTree.hpp"
-#include "Viewport.hpp"
+#include "button_pressed.h"
 #include "util.h"
 
 namespace godot {
-class ButtonQuit : public Button {
+class ButtonQuit : public ButtonPressed<ButtonQuit> {
     GODOT_CLASS_WITH_INIT(ButtonQuit, Button);
 
-public:
-    void init() { connect("pressed", this, "_button_pressed"); }
-    static void _register_methods() {
-        register_method("_button_pressed", &ButtonQuit::_button_pressed);
-    }
-
-private:
-    void _button_pressed() { get_tree()->quit(0); }
+    void button_pressed() { get_tree()->quit(0); }
 };
 } // namespace godot

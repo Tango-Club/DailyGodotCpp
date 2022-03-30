@@ -4,8 +4,12 @@
 
 #include "Node.hpp"
 
-namespace godot {
-namespace util {
+#define GODOT_CLASS_WITH_INIT(Name, Base) \
+    GODOT_CLASS(Name, Base)               \
+public:                                   \
+    void _init() { util::call_if_has_init(this); }
+
+namespace godot::util {
 
 template <typename T>
 concept has_init = requires(T object) {
@@ -18,7 +22,7 @@ void call_if_has_init(T* object) {
 }
 
 template <typename T>
-void call_if_has_init(T*) {}
+void call_if_has_init(T* /*unused*/) {}
 
 void remove_all_child(Node* node) {
     if (node == nullptr) {
@@ -31,11 +35,5 @@ void remove_all_child(Node* node) {
         child->queue_free();
     }
 }
-} // namespace util
 
-#define GODOT_CLASS_WITH_INIT(Name, Base) \
-    GODOT_CLASS(Name, Base)               \
-public:                                   \
-    void _init() { util::call_if_has_init(this); }
-
-} // namespace godot
+} // namespace godot::util
