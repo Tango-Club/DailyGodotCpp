@@ -18,7 +18,7 @@ public:
     }
 
 private:
-    int _speed = 500;
+    int _speed = init_speed;
     Vector2 _motion;
 
     void _update_motion_from_input() {
@@ -26,17 +26,19 @@ private:
         Input* input = Input::get_singleton();
 
         if (input->is_action_pressed("ui_up")) {
-            _motion.y -= _speed;
+            _motion.y -= static_cast<float>(_speed);
         }
         if (input->is_action_pressed("ui_down")) {
-            _motion.y += _speed;
+            _motion.y += static_cast<float>(_speed);
         }
         if (input->is_action_pressed("ui_left")) {
-            _motion.x -= _speed;
+            _motion.x -= static_cast<float>(_speed);
         }
         if (input->is_action_pressed("ui_right")) {
-            _motion.x += _speed;
+            _motion.x += static_cast<float>(_speed);
         }
     }
+
+    static const int init_speed = 500;
 };
 } // namespace godot

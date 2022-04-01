@@ -1,13 +1,14 @@
 #pragma once
 
 #include <Godot.hpp>
-
-#include "Node.hpp"
+#include <Node.hpp>
 
 #define GODOT_CLASS_WITH_INIT(Name, Base) \
     GODOT_CLASS(Name, Base)               \
 public:                                   \
-    void _init() { util::call_if_has_init(this); }
+    void _init() {                        \
+        util::call_if_has_init(this);     \
+    }
 
 namespace godot::util {
 

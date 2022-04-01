@@ -2,9 +2,9 @@
 
 #include <Button.hpp>
 #include <Godot.hpp>
+#include <SceneTree.hpp>
+#include <Viewport.hpp>
 
-#include "SceneTree.hpp"
-#include "Viewport.hpp"
 #include "button_pressed.h"
 #include "util.h"
 

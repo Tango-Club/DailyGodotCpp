@@ -2,8 +2,8 @@
 
 #include <Button.hpp>
 #include <Godot.hpp>
+#include <SceneTree.hpp>
 
-#include "SceneTree.hpp"
 #include "button_pressed.h"
 #include "util.h"
 

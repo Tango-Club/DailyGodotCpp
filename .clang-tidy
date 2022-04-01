@@ -3,7 +3,11 @@ Checks: |
   -*,
   clang-diagnostic-*,
   clang-analyzer-*,
+  cppcoreguidelines-*,
+  -cppcoreguidelines-pro-type-union-access,
   modernize-*,
   -modernize-use-trailing-return-type,
+  performance-*,
+  -performance-unnecessary-value-param,
   readability-*
 WarningsAsErrors: '*'

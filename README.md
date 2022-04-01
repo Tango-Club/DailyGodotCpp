@@ -1,8 +1,8 @@
 # DailyGodotCpp
 Godot practice with GDNative C++.
 ## Env Dependency (Windows)
-* [cmake](https://cmake.org/download/)
-* [ninja](https://github.com/ninja-build/ninja/releases)
-* [llvm13](https://github.com/llvm/llvm-project/releases/tag/llvmorg-13.0.1)
-* [git bash](https://git-scm.com/download/win)
-* [ccache](https://ccache.dev/download.html)
+* [CMake](https://cmake.org/download/)
+* [Ninja](https://github.com/ninja-build/ninja/releases)
+* [LLVM 14](https://github.com/llvm/llvm-project/releases/tag/llvmorg-14.0.0)
+* [Git Bash](https://git-scm.com/download/win)
+* [Ccache](https://ccache.dev/download.html)
