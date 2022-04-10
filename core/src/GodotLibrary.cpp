@@ -1,25 +1,24 @@
 #include <Godot.hpp>
 
-#include "Button.hpp"
 #include "button_continue.h"
-#include "button_main_menu.h"
+#include "button_pressed_normal.h"
 #include "button_quit.h"
-#include "button_test_start.h"
 #include "controller.h"
 #include "menu_cancel.h"
 
 using namespace godot;
 
-extern "C" void GDN_EXPORT godot_gdnative_init(godot_gdnative_init_options* o) {
-    Godot::gdnative_init(o);
+extern "C" void GDN_EXPORT godot_gdnative_init(godot_gdnative_init_options* options) {
+    Godot::gdnative_init(options);
 }
 
-extern "C" void GDN_EXPORT godot_gdnative_terminate(godot_gdnative_terminate_options* o) {
-    Godot::gdnative_terminate(o);
+extern "C" void GDN_EXPORT godot_gdnative_terminate(godot_gdnative_terminate_options* options) {
+    Godot::gdnative_terminate(options);
 }
 
 extern "C" void GDN_EXPORT godot_nativescript_init(void* handle) {
     Godot::nativescript_init(handle);
+
     register_class<Controller>();
     register_class<ButtonQuit>();
     register_class<ButtonTestStart>();

@@ -7,6 +7,7 @@
 #include "util.h"
 
 namespace godot {
+
 class Controller : public KinematicBody2D {
     GODOT_CLASS_WITH_INIT(Controller, KinematicBody2D);
 
@@ -41,4 +42,5 @@ private:
 
     static const int init_speed = 500;
 };
+
 } // namespace godot

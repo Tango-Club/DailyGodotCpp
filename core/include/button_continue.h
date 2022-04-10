@@ -9,6 +9,7 @@
 #include "util.h"
 
 namespace godot {
+
 class ButtonContinue : public ButtonPressed<ButtonContinue> {
     GODOT_CLASS_WITH_INIT(ButtonContinue, Button);
 
@@ -21,4 +22,5 @@ class ButtonContinue : public ButtonPressed<ButtonContinue> {
 
     NodePath _menu_path = "/root/Control";
 };
+
 } // namespace godot

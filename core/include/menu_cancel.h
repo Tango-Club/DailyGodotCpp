@@ -12,6 +12,7 @@
 #include "util.h"
 
 namespace godot {
+
 class MenuCancel : public Node2D {
     GODOT_CLASS_WITH_INIT(MenuCancel, Node2D);
 
@@ -38,4 +39,5 @@ private:
 
     NodePath _menu_path = "/root/Control";
 };
+
 } // namespace godot
