@@ -6,3 +6,6 @@ Godot practice with GDNative C++.
 * [LLVM 14](https://github.com/llvm/llvm-project/releases/tag/llvmorg-14.0.0)
 * [Git Bash](https://git-scm.com/download/win)
 * [Ccache](https://ccache.dev/download.html)
+
+## Development Guide
+* [Development Manual](https://github.com/Tango-Club/DailyGodotCpp/blob/main/core/development_manual.md)
